@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Controle-de-estoque-MVC.props" />
+</Project>

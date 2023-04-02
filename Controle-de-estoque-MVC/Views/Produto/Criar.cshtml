@@ -1,0 +1,27 @@
+﻿@model ProdutoModel
+
+@{
+    ViewData["Title"] = "Criar Produto";
+}
+<div class="text-center">
+
+    <h1 class="display-4">Cadastrar Produto</h1>
+
+</div>
+
+<form asp-controller="Produto" asp-action="Criar" method="Post">
+
+
+        <label for="Produto">Produto</label>
+        <input  type="text" asp-for="Produto"  class="form-control" placeholder="Digite o Nome do Produto">
+
+    
+
+   
+        <label for="Serial">Serial</label>
+        <input   type="text" asp-for="Serial"  class="form-control" placeholder="Digite o Serial">
+
+
+    <button type="submit" class="btn btn-primary">Adicionar</button>
+    <a class="btn btn-secondary" asp-controller="Produto" asp-action="Index" role="button">Voltar</a>
+</form>
